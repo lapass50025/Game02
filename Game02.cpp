@@ -64,34 +64,34 @@ void DrawArray(char **p, int nRow, int nCol, char chRow, char chCol)
 	
 	
 	
-	// ������
+	//
 	for (j = 0; j < nCol; j++)
 	{
 		p[0][j] = chRow;
 	}
 	cout << endl;
 	
-	// ������
+	//
 	for (i = 1; i < nRow - 1; i++)
 	{
 		for (j = 0; j < nCol; j++)
 		{
-			// ���� ����
+			//
 			if( j == 0 )
 			{
 				p[i][j] = chCol;
 			}
-			// ������ ����
+			/
 			else if( j == (nCol-1) )
 			{
 				p[i][j] = chCol;
 			}
-			// ��� ����
+			//
 			else if( j == (nCol/2) )
 			{
 				p[i][j] = chCol;
 			}
-			// ����
+			//
 			else
 			{
 				p[i][j] = ' ';
@@ -99,7 +99,7 @@ void DrawArray(char **p, int nRow, int nCol, char chRow, char chCol)
 		}
 	}
 	
-	// ������
+	//
 	for (j = 0; j < nCol; j++)
 	{
 		p[nRow-1][j] = chRow;
@@ -144,7 +144,7 @@ int main(void)
 
 
 
-	// �Է� �ޱ�
+	//
 	cout << "Enter Row and Column : ";
 	cin >> nRow >> nCol;
 	
@@ -154,16 +154,16 @@ int main(void)
 	cout << "Display Column : ";
 	cin >> chCol;
 
-	// �迭 �����ϱ�
+	//
 	CreateArray(&p, nRow, nCol);
 
-	// �迭�� �׸���	
+	//	
 	DrawArray(p, nRow, nCol, chRow, chCol);
 	
-	// �迭 ����ϱ�
+	//
 	ShowArray(p, nRow, nCol);
 	
-	// �迭 �����ϱ�
+	//
 	DeleteArray(&p, nRow);
 	
 	return 0;
