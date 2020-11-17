@@ -81,7 +81,7 @@ void DrawArray(char **p, int nRow, int nCol, char chRow, char chCol)
 			{
 				p[i][j] = chCol;
 			}
-			/
+			//
 			else if( j == (nCol-1) )
 			{
 				p[i][j] = chCol;
